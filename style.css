@@ -1,7 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
 * {
     text-decoration: none;
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
+}
+
+/* Name at the top-left */
+.name{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-weight: 500;
+    font-family: Montserrat;
+    border: 1px solid black;
+}
+
+/* Top NavBar */
+
+.navTop{
+    list-style: none;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right: 15%;
+    top: 5%;
+    height: 5%;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+}
+
+/* Section for the flag languages */
+.languages{
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5%;
+    width: 10%;
+    border: 1px black solid;
+}
+.flag{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+}
+.flagImage{
+    position: inherit;
+    top: 10%;
+    width:100%
+}
+
+/* Main Photo */
+.photo{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    border-radius: 50%;
+    height: 60%;
+    width: 30%;
+}
+
+/* Main Text */
+.text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    height: 25%;
+    width: 40%;
+    font-family: Montserrat;
+    /* border: 1px solid black; */
+}
+
+.text h1{
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+/* Bottom NavBar */
+.navBottom{
+    list-style: none;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20%;
+    width: 40%;
+    top: 55%;
+    left: 50%;
+    /* border: 1px solid black; */
+}
+
+.navBottom button{
+    border-radius: 50%;
+    width: 25%;
 }
