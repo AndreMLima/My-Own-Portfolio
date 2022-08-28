@@ -15,6 +15,7 @@
     top: 5%;
     font-weight: 500;
     font-family: Montserrat;
+    z-index: 2;
     border: 1px solid black;
 }
 
@@ -31,6 +32,7 @@
     width: 20%;
     justify-content: space-around;
     align-items: center;
+    z-index: 2;
     border: 1px solid black;
 }
 
@@ -46,18 +48,32 @@
     align-items: center;
     height: 5%;
     width: 10%;
+    z-index: 2;
     border: 1px black solid;
 }
 .flag{
     position: relative;
     width: 20%;
     height: 100%;
+    z-index: 2;
     border: 1px solid black;
 }
 .flagImage{
     position: inherit;
     top: 10%;
     width:100%
+}
+.flagImage:hover{
+    cursor: pointer;
+}
+
+/* Shadow */
+.shadow{
+    position: absolute;
+    height: 12%;
+    width: 100%;
+    box-shadow: 0 1px 30px 2px gray;
+    z-index: 1;
 }
 
 /* Main Photo */
@@ -97,7 +113,7 @@
     width: 40%;
     top: 55%;
     left: 50%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .navBottom button{
